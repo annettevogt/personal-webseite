@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 48px 1fr 48px;
+  height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background: steelblue;
+}
+
+main {
+  padding: 20px;
+  background: greenyellow;
+  grid-column: span 2;
+}
+
+aside {
+  padding: 20px;
+  background: pink;
+  grid-column: 4/5;
+}
+
+footer {
+  padding: 20px;
+  background: yellow;
+}
+
+header,
+footer {
+  grid-column: span 4;
+}
